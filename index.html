@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Демо Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div id="app">
+  <form id="addStudentsForm" class="w-50 m-auto mb-5 mt-5 border rounded p-3">
+    <div class="mb-1">
+      <label for="name" class="form-label">Имя</label>
+      <input type="text" class="form-control" id="name">
+      <p class="form-name"></p>
+    </div>
+    <div class="mb-1">
+      <label for="surname" class="form-label">Фамилия</label>
+      <input type="text" class="form-control" id="surname">
+      <p class="form-surname"></p>
+    </div>
+    <div class="mb-1">
+      <label for="secName" class="form-label">Отчество</label>
+      <input type="text" class="form-control" id="secName">
+      <p class="form-sec-name"></p>
+    </div>
+    <div class="mb-1">
+      <label for="date" class="form-label">Дата рождения</label>
+      <input type="date" class="form-control" id="date">
+      <p class="form-date"></p>
+    </div>
+    <div class="mb-1">
+      <label for="year" class="form-label">Год начала обучения</label>
+      <input type="date" class="form-control" id="year">
+      <p class="form-year"></p>
+    </div>
+    <div class="mb-1">
+      <label for="class" class="form-label">Факультет</label>
+      <input type="text" class="form-control" id="class">
+      <p class="form-class"></p>
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+  </form>
+  <div class="w-50 m-auto mb-5 mt-5 border rounded p-3">
+    <div class="mb-1">
+      <label for="class" class="form-label">Поиск по Фио</label>
+      <input type="text" class="form-control" id="inputFilterFio">
+    </div>
+    <div class="mb-1">
+      <label for="class" class="form-label">Поиск по факультету</label>
+      <input type="text" class="form-control" id="inputFilterClasses">
+    </div>
+    <div class="mb-1">
+      <label for="class" class="form-label">Поиск по началу обучения</label>
+      <input type="number" class="form-control" id="inputFilterStart">
+    </div>
+    <div class="mb-1">
+      <label for="class" class="form-label">Поиск по окончанию обучения</label>
+      <input type="number" class="form-control" id="inputFilterEnd">
+    </div>
+  </div>
+  <table id="tableStudents" class="table m-auto w-75 border">
+    <thead>
+    <tr>
+      <th id="fioFilter" class="border" scope="col">Фио</th>
+      <th id="dateFilter" class="border" scope="col">Дата рождения</th>
+      <th id="yearFilter" class="border" scope="col">Год начала обучения</th>
+      <th id="classFilter" class="border" scope="col">Факультет</th>
+    </tr>
+    </thead>
+    <tbody class="table-body">
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
